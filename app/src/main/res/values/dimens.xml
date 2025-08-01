@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="finance_layout_size">350dp</dimen>
+    <dimen name="finance_spinner_size">48dp</dimen>
+</resources>
