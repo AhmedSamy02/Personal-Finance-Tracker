@@ -5,7 +5,7 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
-
+//rr
 class MainActivity : AppCompatActivity() {
 
     companion object {

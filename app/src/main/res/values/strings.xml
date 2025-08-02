@@ -2,7 +2,7 @@
     <string name="app_name">Finance Tracker</string>
 
     <!-- MainActivity strings -->
-    <string name="welcome_title">Welcome to Finance Tracker!</string>
+    <string name="welcome_title">Welcome to Finance Tracker</string>
     <string name="welcome_subtitle">Track your expenses with ease</string>
     <string name="btn_track_expense">Track Expense</string>
     <string name="btn_share">Share</string>
