@@ -6,6 +6,8 @@ import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import com.example.financetracker.databinding.ActivityFiananceBinding
+import android.widget.ArrayAdapter
+
 
 class FinanceActivity : AppCompatActivity() {
     private lateinit var _binding: ActivityFiananceBinding
@@ -16,6 +18,12 @@ class FinanceActivity : AppCompatActivity() {
         _binding = ActivityFiananceBinding.inflate(layoutInflater)
         val view = binding.root
         setContentView(view)
+
+        // Spinner setup
+        val categories = arrayOf("Food", "Transport", "Bills", "Other")
+        val adapter = ArrayAdapter(this, android.R.layout.simple_spinner_dropdown_item, categories)
+        binding.spExpenseCategory.adapter = adapter
+
 
         _binding.btnSave.setOnClickListener {
             Toast.makeText(this, "Expense saved!", Toast.LENGTH_SHORT).show()
