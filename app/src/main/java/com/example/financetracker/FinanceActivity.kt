@@ -21,10 +21,19 @@ class FinanceActivity : AppCompatActivity() {
         _binding = ActivityFiananceBinding.inflate(layoutInflater)
         val view = binding.root
         setContentView(view)
-        val adapter = ExpenseSpinnerAdapter(this,spinnerItems)
+        val adapter = ExpenseSpinnerAdapter(this, spinnerItems)
         binding.spExpenseCategory.adapter = adapter
         _binding.btnSave.setOnClickListener {
+            if (binding.etExpenseName.text.isNullOrBlank()) {
+                Toast.makeText(this, "Please enter an expense name", Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
+            }
+            if (binding.etAmount.text.isNullOrBlank()) {
+                Toast.makeText(this, "Expense amount can't be empty", Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
+            }
             Toast.makeText(this, "Expense saved!", Toast.LENGTH_SHORT).show()
+            finish()
         }
     }
 
