@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
+
 //rr
 class MainActivity : AppCompatActivity() {
 
@@ -30,16 +31,12 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun setupClickListeners() {
-
-        // Explicit Intent to FinanceActivity
-        //btnTrackExpense.setOnClickListener {
-        //    val intent = Intent(this, FinanceActivity::class.java)
-        // startActivity(intent)
-       // }
-
-        // Implicit Intent for sharing
         btnShare.setOnClickListener {
             shareExpense()
+        }
+        btnTrackExpense.setOnClickListener {
+            val intent = Intent(this, FinanceActivity::class.java)
+            startActivity(intent)
         }
     }
 

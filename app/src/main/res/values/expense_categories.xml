@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="expense_category">
+        <item>Living Expenses</item>
+        <item>Transportation</item>
+        <item>Food</item>
+        <item>Utilities</item>
+        <item>Family Care</item>
+        <item>Personal Care</item>
+        <item>Healthcare</item>
+        <item>Technology</item>
+        <item>Debt Payments</item>
+        <item>Savings and Investments</item>
+    </string-array>
+</resources>

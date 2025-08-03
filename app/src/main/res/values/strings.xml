@@ -16,4 +16,10 @@
     <!-- Share text -->
     <string name="share_expense_text">I just added a new expense: Lunch – $10</string>
     <string name="share_subject">My Expense Update</string>
+
+    <string name="finance_title">Add New Expense</string>
+    <string name="finance_subtitle">Fill out the details below to log your spending.</string>
+    <string name="et_expense_name_hint">Expense Name</string>
+    <string name="et_amount_hint">Amount</string>
+    <string name="finance_save_btn">Save Expense</string>
 </resources>
