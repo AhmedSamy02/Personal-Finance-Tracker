@@ -16,4 +16,7 @@
     <!-- Button dimensions -->
     <dimen name="button_height">48dp</dimen>
     <dimen name="button_corner_radius">8dp</dimen>
+
+    <dimen name="finance_layout_size">350dp</dimen>
+    <dimen name="finance_spinner_size">48dp</dimen>
 </resources>
