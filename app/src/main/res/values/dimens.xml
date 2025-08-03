@@ -19,4 +19,6 @@
 
     <dimen name="finance_layout_size">350dp</dimen>
     <dimen name="finance_spinner_size">48dp</dimen>
+    <dimen name="iv_spinner_item_margin">16dp</dimen>
+    <dimen name="spinner_item_height">58dp</dimen>
 </resources>

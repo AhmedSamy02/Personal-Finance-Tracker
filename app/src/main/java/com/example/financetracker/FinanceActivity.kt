@@ -2,11 +2,14 @@ package com.example.financetracker
 
 import android.os.Bundle
 import android.util.Log
+import android.view.View
+import android.widget.AdapterView
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import com.example.financetracker.databinding.ActivityFiananceBinding
 import android.widget.ArrayAdapter
+import android.widget.SpinnerAdapter
 
 
 class FinanceActivity : AppCompatActivity() {
@@ -18,17 +21,13 @@ class FinanceActivity : AppCompatActivity() {
         _binding = ActivityFiananceBinding.inflate(layoutInflater)
         val view = binding.root
         setContentView(view)
-
-        // Spinner setup
-        val categories = arrayOf("Food", "Transport", "Bills", "Other")
-        val adapter = ArrayAdapter(this, android.R.layout.simple_spinner_dropdown_item, categories)
+        val adapter = ExpenseSpinnerAdapter(this,spinnerItems)
         binding.spExpenseCategory.adapter = adapter
-
-
         _binding.btnSave.setOnClickListener {
             Toast.makeText(this, "Expense saved!", Toast.LENGTH_SHORT).show()
         }
     }
+
     override fun onStart() {
         super.onStart()
         Log.d("Finance Life Cycle", "onStart() called")

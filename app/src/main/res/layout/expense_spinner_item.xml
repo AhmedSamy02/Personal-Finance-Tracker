@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/spinner_item_height"
+    android:orientation="horizontal"
+    android:layout_margin="16dp"
+    android:elevation="8dp"
+>
+    <ImageView
+        android:id="@+id/iv_spinner_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/outline_dollar_24"
+        android:contentDescription="@string/iv_spinner_item_category_description"
+        android:layout_marginHorizontal="@dimen/iv_spinner_item_margin"
+        android:layout_gravity="center"
+        />
+    <TextView
+        android:id="@+id/tv_spinner_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="@string/tv_spinner_item_placeholder"
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+        />
+
+</LinearLayout>

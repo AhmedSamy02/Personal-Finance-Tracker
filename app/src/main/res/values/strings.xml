@@ -22,4 +22,6 @@
     <string name="et_expense_name_hint">Expense Name</string>
     <string name="et_amount_hint">Amount</string>
     <string name="finance_save_btn">Save Expense</string>
+    <string name="iv_spinner_item_category_description">Expense Category</string>
+    <string name="tv_spinner_item_placeholder">Bills</string>
 </resources>
