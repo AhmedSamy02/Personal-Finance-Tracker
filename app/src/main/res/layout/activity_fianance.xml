@@ -68,8 +68,8 @@
 
         <Spinner
             android:id="@+id/sp_expense_category"
-            style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox"
             android:layout_width="match_parent"
+            style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox"
             android:layout_height="@dimen/finance_spinner_size"
             android:layout_margin="12dp"
             android:padding="10dp" />
